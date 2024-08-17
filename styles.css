@@ -178,25 +178,32 @@ body[theme=dark] .main-container {
     text-align: center;
     }
 .rainbow-joey a {
-	text-decoration: none;
+	  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
 	font-family: Pixel Emulator;
 	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
         background-clip: text;
         color: transparent;
 	  animation: rainbow 5s infinite;
+  transition: text-decoration-color 0.5s ease;
 }
 .rainbow-joey a:hover {
-	text-decoration: underline;
+	text-decoration-color: currentColor;
+  transition: text-decoration-color 0.5s ease;
 }
 .rainbow-ts {
     }
 .rainbow-ts a {
-	text-decoration: none;
+	  	  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
 	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
         background-clip: text;
         color: transparent;
 	  animation: rainbow 5s infinite;
+  transition: text-decoration-color 0.5s ease;
 }
 .rainbow-ts a:hover {
 	text-decoration: underline;
